@@ -79,6 +79,17 @@ $(function () {
             clock--;
         },1000)
     }
+    let fontImg = document.querySelector('.p2_txt')
+    let imgs = ['img/p2_txt1.png','img/p2_txt2.png','img/p2_txt2.png'];
+    let i = 0;
+    setInterval(function () {
+        if(i == 3){
+            i = 0;
+        }
+        fontImg.src = imgs[i];
+        i++;
+    },1000)
+
     /*第三页面*/
     function gameOver() {
         $('#result_num').html('￥'+sum);
